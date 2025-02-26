@@ -19,11 +19,11 @@
 
         img {
             position: absolute;
-            top: -05%;
+            top: -5%;
             left: 50%;
-            transform: translateX(-50%); 
+            transform: translateX(-50%);
             max-width: 100%;
-            max-height: 100%; 
+            max-height: 80%;
             width: auto;
             height: auto;
             object-fit: contain;
@@ -33,17 +33,33 @@
             color: #000;
             text-align: center;
             position: absolute;
-            bottom: 9%;
-
+            bottom: 10%;
             z-index: 1;
             margin: 0;
+            font-size: 3vw; 
+        }
+
+        /* Media query for mobile devices */
+        @media screen and (max-width: 600px) {
+            h1 {
+                bottom: 5%; 
+                font-size: 7vw; 
+                padding: 0 10px; 
+            }
+
+            img {
+                top: 0%; 
+                height: auto;
+                object-fit: cover;
+            }
         }
     </style>
 </head>
 <body>
     <h1>Site’s buffering harder than your brain trying to solve 1+1 xD.
         <br>
-    Come back tomorrow, it’ll be live then, you overcooked potato with 1mbps WiFi!</h1>
+    Come back tomorrow, it’ll be live then, you overcooked potato... <br>
+    with 1mbps WiFi!</h1>
     <img src="f.png" alt="Full screen image">
     
     <script src="script.js"></script>
